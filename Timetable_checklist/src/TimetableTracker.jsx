@@ -3,13 +3,22 @@ import { Calendar, Download, Upload, Plus, Trash2, Check } from 'lucide-react';
 
 
 export default function TimetableTracker() {
-  const [tasks, setTasks] = useState([
-    { id: 1, title: 'Morning Exercise', time: '6:00 AM' },
-    { id: 2, title: 'Study Session', time: '9:00 AM' },
-    { id: 3, title: 'Lunch Break', time: '1:00 PM' },
-    { id: 4, title: 'Project Work', time: '3:00 PM' },
-    { id: 5, title: 'Evening Walk', time: '6:00 PM' },
-  ]);
+const [tasks, setTasks] = useState([
+  { id: 1, title: 'College', time: '9:00 AM - 5:00 PM' },
+  { id: 2, title: 'Evening Breakfast & Rest', time: '5:00 PM - 6:00 PM' },
+  { id: 3, title: 'Movie / Youtube / Family Chill Time', time: '6:00 PM - 6:30 PM' },
+  { id: 4, title: 'Internship Work', time: '6:30 PM - 7:30 PM' },
+  { id: 5, title: 'Academics', time: '7:30 PM - 8:30 PM' },
+  { id: 6, title: 'Movie / Instagram / Family Chill Time', time: '8:30 PM - 8:45 PM' },
+  { id: 7, title: 'Programming Language Practice', time: '8:45 PM - 9:45 PM' },
+  { id: 8, title: 'Movie / Instagram / Family Chill Time', time: '9:45 PM - 10:10 PM' },
+  { id: 9, title: 'Project Work', time: '10:10 PM - 11:10 PM' },
+  { id: 10, title: 'Video Editing / Recording Completion', time: '11:10 PM - 11:30 PM' },
+  { id: 11, title: 'Movie / Instagram / Family Chill Time', time: '11:30 PM - 11:45 PM' },
+  { id: 12, title: 'Content Creation Support', time: '11:45 PM - 12:30 AM' },
+  { id: 13, title: 'GSoC Preparation', time: '12:30 AM - 2:30 AM' },
+]);
+
   
   const [progress, setProgress] = useState({});
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
